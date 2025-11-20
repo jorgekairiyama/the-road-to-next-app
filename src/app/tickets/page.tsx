@@ -1,7 +1,7 @@
+import clsx from "clsx";
 import Link from "next/link";
 import { initialTickets } from "@/src/data";
 import { ticketPath } from "@/src/paths";
-
 
 const TicketsPage = () => {
     return (
@@ -18,7 +18,13 @@ const TicketsPage = () => {
                 {initialTickets.map((ticket) => (
                     <div key={ticket.id} className="w-full max-w-[420px] p-4 border border-red-100 rounded">
                         <h3 className="text-lg font-semibold truncate">{ticket.title}</h3>
-                        <p className="text-sm text-slate-500 truncate">{ticket.content}</p>
+                        <p
+                            className={clsx("text-sm text-slate-500 truncate", {
+                                "line-through": ticket.status === "DONE",
+                            })}
+                        >
+                            {ticket.content}
+                        </p>
 
                         <Link href={ticketPath(ticket.id)} className="text-sm underline">
                             View
@@ -26,7 +32,7 @@ const TicketsPage = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
     );
 };
 
