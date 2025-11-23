@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { homePath, ticketsPath } from "../paths";
+import { buttonVariants } from "@/components/ui/button";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,10 +29,20 @@ export default function RootLayout({
           w-full flex py-2.5 px-5 justify-between
         ">
           <div>
-            <Link href={homePath()} className="text-lg font-bold">Home</Link>
+            <Link
+              href={homePath()}
+              className={buttonVariants({ variant: "outline" })}
+            >
+              Home
+            </Link>
           </div>
           <div>
-            <Link href={ticketsPath()} className="text-sm underline">Tickets</Link>
+            <Link
+              href={ticketsPath()}
+              className={buttonVariants({ variant: "outline" })}
+            >
+              Tickets
+            </Link>
           </div>
         </nav>
         <main className="
@@ -44,6 +55,6 @@ export default function RootLayout({
           {children}
         </main>
       </body>
-    </html>
+    </html >
   );
 }
