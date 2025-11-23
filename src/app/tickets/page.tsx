@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { initialTickets } from "@/src/data";
-import { ticketPath } from "@/src/paths";
 import {
     Card,
     CardContent,
@@ -8,6 +6,8 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import { initialTickets } from "@/src/data";
+import { ticketPath } from "@/src/paths";
 
 const CheckIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

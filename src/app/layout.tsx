@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { homePath, ticketsPath } from "../paths";
 import { buttonVariants } from "@/components/ui/button";
+import { homePath, ticketsPath } from "../paths";
 
 const inter = Inter({
   subsets: ["latin"],
