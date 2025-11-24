@@ -6,6 +6,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { initialTickets } from "@/src/data";
 import { ticketPath } from "@/src/paths";
 
@@ -42,7 +43,7 @@ const TicketsPage = () => {
                     </p>
                 </div>
             </div>
-
+            <Separator />
             <div className="flex-1 flex flex-col items-center gap-y-4 animate-fade-in-from-top">
                 {initialTickets.map((ticket) => (
                     <Card
