@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { homePath, ticketsPath } from "../paths";
+import { LucideKanban } from "lucide-react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,9 +32,12 @@ export default function RootLayout({
           <div>
             <Link
               href={homePath()}
-              className={buttonVariants({ variant: "outline" })}
+              className={buttonVariants({ variant: "ghost" })}
             >
-              Home
+              <LucideKanban />
+              <h1 className="ml-2 text-lg font-semibold">
+                TicketBounty
+              </h1>
             </Link>
           </div>
           <div>
