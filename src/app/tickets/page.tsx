@@ -1,9 +1,7 @@
 
 
 import { Heading } from "@/src/components/heading";
-
 import { initialTickets } from "@/src/data";
-
 import { TicketItem } from "@/src/features/ticket/components/ticket-item";
 
 

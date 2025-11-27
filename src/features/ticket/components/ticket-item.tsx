@@ -1,10 +1,10 @@
+import { LucideSquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@/src/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card";
 import { ticketPath } from "@/src/paths";
 import { TICKET_ICONS } from "../constants";
 import { Ticket } from "../types";
-import { LucideSquareArrowOutUpRight } from "lucide-react";
-import { Button } from "@/src/components/ui/button";
 
 type TicketItemProps = {
     ticket: Ticket;
