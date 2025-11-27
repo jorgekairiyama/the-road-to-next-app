@@ -1,13 +1,12 @@
-import { LucideCircleCheck, LucideFileText, LucidePencil, Ticket } from "lucide-react";
+
+
 import { Heading } from "@/src/components/heading";
+
 import { initialTickets } from "@/src/data";
+
 import { TicketItem } from "@/src/features/ticket/components/ticket-item";
 
-const TICKET_ICONS = {
-    OPEN: <LucideFileText />,
-    IN_PROGRESS: <LucidePencil />,
-    DONE: <LucideCircleCheck />,
-}
+
 
 const TicketsPage = () => {
     return (
