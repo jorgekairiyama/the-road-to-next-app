@@ -1,5 +1,5 @@
-import { Placeholder } from "@/components/placeholder";
-import { Button } from "@/components/ui/button";
+import { Placeholder } from "@/src/components/placeholder";
+import { Button } from "@/src/components/ui/button";
 import { initialTickets } from "@/src/data";
 import { ticketsPath } from "@/src/paths";
 import Link from "next/link";

@@ -1,13 +1,13 @@
 import { LucideCircleCheck, LucideFileText, LucidePencil } from "lucide-react";
 import Link from "next/link";
-import { Heading } from "@/components/heading";
+import { Heading } from "@/src/components/heading";
 import {
     Card,
     CardContent,
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card";
+} from "@/src/components/ui/card";
 import { initialTickets } from "@/src/data";
 import { ticketPath } from "@/src/paths";
 

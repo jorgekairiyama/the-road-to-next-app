@@ -3,7 +3,7 @@ import { LucideKanban } from "lucide-react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/src/components/ui/button";
 import { homePath, ticketsPath } from "../paths";
 
 const inter = Inter({
