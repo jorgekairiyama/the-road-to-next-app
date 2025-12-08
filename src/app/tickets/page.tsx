@@ -1,11 +1,10 @@
-
 'use client';
 
+import { useEffect, useState } from "react";
 import { Heading } from "@/src/components/heading";
 import { TicketItem } from "@/src/features/ticket/components/ticket-item";
 import { getTickets } from "@/src/features/ticket/queries/get-tickets";
 import { Ticket } from "@/src/features/ticket/types";
-import { useEffect, useState } from "react";
 
 
 

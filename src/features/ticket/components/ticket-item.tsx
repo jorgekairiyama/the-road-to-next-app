@@ -12,6 +12,7 @@ type TicketItemProps = {
     isDetail?: boolean;
 };
 const TicketItem = ({ ticket, isDetail }: TicketItemProps) => {
+    //console.log("Where am I displayed (TicketItem)");
     const detailButton = (
         <Button variant="outline" size="icon" asChild>
             <Link href={ticketPath(ticket.id)}>
